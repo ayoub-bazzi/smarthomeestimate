@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HVAC Replacement Cost Calculator | 2026 Systems Price Estimator</title>
+  <meta name="description" content="Estimate HVAC replacement costs from system type, home size, SEER2 efficiency, and ductwork status.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smarthomeestimate.com/hvac-cost/replacement-calculator/">
+  <meta property="og:title" content="HVAC Replacement Cost Calculator | 2026 Systems Price Estimator">
+  <meta property="og:description" content="Estimate HVAC replacement costs from system type, home size, SEER2 efficiency, and ductwork status.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smarthomeestimate.com/hvac-cost/replacement-calculator/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/icon.svg">
+  <link rel="icon" type="image/png" href="/assets/images/icon.png">
+  <link rel="apple-touch-icon" href="/assets/images/icon.png">
+  
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"Smart Home Estimate","url":"https://smarthomeestimate.com"},{"@context":"https://schema.org","@type":"WebApplication","@id":"https://smarthomeestimate.com/hvac-cost/replacement-calculator/#webapp","url":"https://smarthomeestimate.com/hvac-cost/replacement-calculator/","name":"HVAC Replacement Cost Calculator","applicationCategory":"BusinessApplication","operatingSystem":"All","browserRequirements":"Requires JavaScript. Requires HTML5.","about":{"@type":"Thing","name":"Home Repair Estimation Metrics"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does it cost to replace an HVAC system?","acceptedAnswer":{"@type":"Answer","text":"A complete residential HVAC replacement often ranges from $6,000 to $12,500, with ductwork or high-efficiency upgrades increasing the total."}},{"@type":"Question","name":"How much does it cost to replace a furnace?","acceptedAnswer":{"@type":"Answer","text":"Furnace-only replacement commonly ranges from $2,500 to $6,500 depending on capacity, efficiency, venting, and access."}},{"@type":"Question","name":"How much does it cost to install an electric heat pump?","acceptedAnswer":{"@type":"Answer","text":"Air-source heat pump installation often ranges from $5,500 to $13,000 depending on size, efficiency, and electrical requirements."}}]}]</script>
+</head>
+<body>
+  <header class="border-b border-dashed border-dashed relative z-50">
+    <div class="site-shell flex items-center justify-between py-4">
+      <div class="flex items-center">
+        <a href="/" class="font-serif text-3xl font-normal tracking-tight text-ink pr-6 md:pr-10 md:border-r md:border-dashed">
+          Smart Home Estimate
+        </a>
+      </div>
+      
+      <button id="mobile-menu-toggle" class="md:hidden flex items-center p-2 text-ink" aria-label="Toggle Navigation">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+
+      <nav aria-label="Primary navigation" class="hidden md:flex flex-wrap gap-x-4 gap-y-2 items-center pl-6 text-sm lg:text-base lg:gap-x-6">
+        <a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/">Home</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/foundation-repair-cost/crack-calculator/">Foundation</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/foundation-repair-cost/pier-and-beam-calculator/">Pier & Beam</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/roofing-cost/calculator/">Roofing</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/hvac-cost/replacement-calculator/">HVAC</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/plumbing-cost/service-estimator/">Plumbing</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/plumbing-cost/septic-tank-calculator/">Septic</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/about/">About</a><a class="nav-link font-medium text-ink hover:text-brand transition-colors" href="/contact/">Contact</a>
+      </nav>
+    </div>
+
+    <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 mx-auto max-w-sm mt-2 p-6 bg-ivory border border-dashed rounded-xl shadow-soft md:hidden">
+      <div class="flex flex-col gap-4 text-center">
+        <a class="text-xl font-serif text-ink hover:text-brand" href="/">Home</a><a class="text-xl font-serif text-ink hover:text-brand" href="/foundation-repair-cost/crack-calculator/">Foundation</a><a class="text-xl font-serif text-ink hover:text-brand" href="/foundation-repair-cost/pier-and-beam-calculator/">Pier & Beam</a><a class="text-xl font-serif text-ink hover:text-brand" href="/roofing-cost/calculator/">Roofing</a><a class="text-xl font-serif text-ink hover:text-brand" href="/hvac-cost/replacement-calculator/">HVAC</a><a class="text-xl font-serif text-ink hover:text-brand" href="/plumbing-cost/service-estimator/">Plumbing</a><a class="text-xl font-serif text-ink hover:text-brand" href="/plumbing-cost/septic-tank-calculator/">Septic</a><a class="text-xl font-serif text-ink hover:text-brand" href="/about/">About</a><a class="text-xl font-serif text-ink hover:text-brand" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero-band">
+  <div class="site-shell py-14 md:py-20">
+    <p class="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-brand">hvac replacement cost</p>
+    <h1 class="max-w-4xl font-serif text-4xl font-normal leading-tight tracking-tight text-ink md:text-5xl lg:text-[3.5rem]">HVAC Replacement Cost Calculator</h1>
+    <p class="mt-6 max-w-3xl text-lg leading-relaxed text-ink/80">Heating and cooling replacement is an integrated equipment and air-distribution project. Use this estimator to compare split systems, heat pumps, and furnace-only replacement.</p>
+    <div class="semantic-snippet">HVAC replacement costs depend on system type, home size, equipment efficiency, ductwork condition, and local code requirements. This calculator gives a planning range, not a Manual J design.</div>
+  </div>
+</section>
+<main>
+  <section class="site-shell grid gap-8 py-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(320px,0.8fr)] lg:items-start">
+    <article class="calculator-panel" aria-labelledby="hvac-calculator-heading">
+      <div class="mb-6 flex items-center justify-between gap-4">
+        <h2 id="hvac-calculator-heading">Calculate Real-Time Costs</h2>
+        <p class="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600" data-progress>Step 1 of 3</p>
+      </div>
+      <div data-calculator="hvac">
+  <div data-calculator-form class="space-y-6">
+    
+    <section class="calc-step is-active" data-step="1">
+  <span class="step-label">Step 1: System Configuration Archetype</span>
+  <div class="space-y-5">
+      <fieldset class="choice-grid">
+    <legend class="sr-only">systemType</legend>
+    <label class="choice-card">
+      <input type="radio" name="systemType" value="split" checked>
+      <span><strong>Complete Split System</strong><span>Central AC plus gas furnace for standard dual-fuel replacement.</span></span>
+    </label><label class="choice-card">
+      <input type="radio" name="systemType" value="heatpump">
+      <span><strong>Electric Heat Pump System</strong><span>All-electric heating and cooling with inverter options.</span></span>
+    </label><label class="choice-card">
+      <input type="radio" name="systemType" value="furnace">
+      <span><strong>Furnace Change-Out Only</strong><span>Replaces only the heating unit while retaining compatible AC components.</span></span>
+    </label>
+  </fieldset>
+      <div class="flex flex-wrap gap-3 pt-2">
+    
+    <button class="btn-primary" type="button" data-next>Continue</button>
+  </div>
+    </div>
+</section>
+    <section class="calc-step" data-step="2" hidden>
+  <span class="step-label">Step 2: Living Space Footprint</span>
+  <div class="space-y-5">
+      <label class="block">
+    <span class="mb-2 block text-sm font-bold text-slate-700">Total Conditioned Living Space: <strong class="text-[#8b5036]" data-range-output="area">1,800</strong> sq. ft.</span>
+    <input class="w-full accent-emerald-500" type="range" name="area" min="1000" max="4000" step="100" value="1800">
+  </label>
+      <div class="flex flex-wrap gap-3 pt-2">
+    <button class="btn-secondary" type="button" data-prev>Back</button>
+    <button class="btn-primary" type="button" data-next>Continue</button>
+  </div>
+    </div>
+</section>
+    <section class="calc-step" data-step="3" hidden>
+  <span class="step-label">Step 3: Efficiency & Air Duct Status</span>
+  <div class="space-y-5">
+      <label class="block">
+    <span class="mb-2 block text-sm font-bold text-slate-700">SEER2 Efficiency Rating</span>
+    <select class="form-control" name="efficiency">
+      <option value="standard">Standard efficiency / 14-15 SEER2</option><option value="high">High efficiency / 16-18 SEER2</option><option value="ultra">Ultra-high inverter efficiency / 19+ SEER2</option>
+    </select>
+  </label>
+      <label class="flex items-start gap-3 rounded-lg border border-slate-200 bg-slate-50 p-4">
+    <input class="mt-1 h-4 w-4 accent-emerald-500" type="checkbox" name="ducts">
+    <span class="text-sm font-semibold text-slate-800">Requires new air duct installation or extensive duct repairs</span>
+  </label>
+      <section class="result-box" data-result-panel>
+    <h3>Your Planning Estimate</h3>
+    <output class="estimate-value" data-result>$0 - $0</output>
+    <p class="mt-2 text-sm text-slate-700" data-result-summary>Adjust inputs to refine your estimate.</p>
+    <p class="mt-3 text-xs leading-relaxed text-slate-500">This is an educational planning range, not a binding quote or professional engineering assessment.</p>
+  </section>
+      <form data-estimate-email class="mt-6 rounded-lg border border-slate-200 bg-white p-5">
+    <h3>Email My Itemized Estimate</h3>
+    <p class="mt-2 text-sm text-slate-600">Optional: send the current estimate details to your inbox for project planning.</p>
+    <div class="honeypot" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+    <input type="hidden" name="projectType">
+    <input type="hidden" name="estimatedCost">
+    <input type="hidden" name="estimatePayload">
+    <div class="mt-4 grid gap-3 md:grid-cols-2">
+      <label><span class="sr-only">Name</span><input class="form-control" name="firstName" placeholder="Name" required></label>
+      <label><span class="sr-only">Email</span><input class="form-control" type="email" name="email" placeholder="Email" required></label>
+      <label class="md:col-span-2"><span class="sr-only">Phone</span><input class="form-control" type="tel" name="phone" placeholder="Optional: Enter your number for text copy alerts"></label>
+    </div>
+    <button class="btn-primary mt-4" type="submit">Email Me My Itemized Estimate PDF</button>
+    <p class="mt-3 text-sm text-slate-600" data-form-status aria-live="polite"></p>
+  </form>
+      <div class="flex flex-wrap gap-3 pt-2">
+    <button class="btn-secondary" type="button" data-prev>Back</button>
+    
+  </div>
+    </div>
+</section>
+  
+  </div>
+</div>
+    </article>
+    <aside class="rounded-3xl border border-dashed border-dashed bg-[#f3f0e6] p-8 lg:sticky lg:top-6" aria-label="Local contractor quote information">
+    <h2 class="font-serif text-3xl font-normal tracking-tight text-ink">Compare Local Contractor Quotes</h2>
+    <p class="mt-4 text-base leading-relaxed text-ink/80">Local permits, access, materials, and code requirements can move real bids beyond any online planning model. Use your estimate as a baseline before speaking with licensed local providers.</p>
+    <div class="mt-6 rounded-xl bg-white p-6 shadow-sm border border-dashed border-dashed text-ink">
+      <p class="font-bold text-ink">Affiliate quote form placeholder</p>
+      <p class="mt-2 text-sm text-ink/70">Insert the approved pay-per-lead widget here when the partner script or iframe endpoint is available.</p>
+    </div>
+  </aside>
+  </section>
+  <article class="site-shell article-body pb-16">
+    <section class="content-card">
+    <h2>Technical Factors That Determine HVAC Invoices</h2>
+    <div class="mt-5 space-y-5"><p>Equipment sizing should be confirmed with a Manual J load calculation rather than guessed from the old unit.</p>
+<p>Higher SEER2 equipment costs more upfront but can reduce energy use in the right home and climate.</p>
+<div class="overflow-x-auto"><table>
+    <thead><tr><th>System Class</th><th>Average Installed Range</th><th>Best Application</th></tr></thead>
+    <tbody><tr><td>Standard gas furnace</td><td>$3,000 - $6,500</td><td>Cold climates with gas service</td></tr><tr><td>Central air conditioner</td><td>$3,500 - $7,500</td><td>Cooling-focused replacement</td></tr><tr><td>Air-source heat pump</td><td>$6,000 - $13,000</td><td>All-electric heating and cooling</td></tr><tr><td>Complete HVAC plus ducts</td><td>$9,000 - $18,000+</td><td>Older homes or major retrofits</td></tr></tbody>
+  </table></div></div>
+  </section>
+<section class="content-card">
+    <h2>Professional Guidelines for Reviewing Contractor Bids</h2>
+    <div class="mt-5 space-y-5"><ul><li>Ask for a written Manual J load calculation.</li><li>Verify EPA Section 608 refrigerant handling certification.</li><li>Confirm the AHRI matched system number for split-system replacements.</li></ul></div>
+  </section>
+    <section class="mt-16 mx-auto max-w-4xl">
+    <h2 class="text-center font-serif text-4xl mb-12 text-ink">Frequently Asked Questions</h2>
+    <div class="faq-list border-t border-dashed border-dashed">
+      
+        <details class="group border-b border-dashed border-dashed py-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 font-medium text-brand">
+            <div class="flex items-center gap-6">
+              <span class="text-brand font-serif text-xl">01</span>
+              <span class="text-brand text-lg">How much does it cost to replace an HVAC system?</span>
+            </div>
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-dashed border-brand/50 bg-brand/10 text-brand group-open:rotate-180 transition-transform">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="mt-4 pl-12 pr-12 text-ink/80 leading-relaxed">A complete residential HVAC replacement often ranges from $6,000 to $12,500, with ductwork or high-efficiency upgrades increasing the total.</div>
+        </details>
+      
+        <details class="group border-b border-dashed border-dashed py-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 font-medium text-brand">
+            <div class="flex items-center gap-6">
+              <span class="text-brand font-serif text-xl">02</span>
+              <span class="text-brand text-lg">How much does it cost to replace a furnace?</span>
+            </div>
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-dashed border-brand/50 bg-brand/10 text-brand group-open:rotate-180 transition-transform">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="mt-4 pl-12 pr-12 text-ink/80 leading-relaxed">Furnace-only replacement commonly ranges from $2,500 to $6,500 depending on capacity, efficiency, venting, and access.</div>
+        </details>
+      
+        <details class="group border-b border-dashed border-dashed py-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 font-medium text-brand">
+            <div class="flex items-center gap-6">
+              <span class="text-brand font-serif text-xl">03</span>
+              <span class="text-brand text-lg">How much does it cost to install an electric heat pump?</span>
+            </div>
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-dashed border-brand/50 bg-brand/10 text-brand group-open:rotate-180 transition-transform">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="mt-4 pl-12 pr-12 text-ink/80 leading-relaxed">Air-source heat pump installation often ranges from $5,500 to $13,000 depending on size, efficiency, and electrical requirements.</div>
+        </details>
+      
+    </div>
+  </section>
+  </article>
+</main>
+  <footer class="border-t border-dashed border-dashed py-10 mt-10">
+    <div class="site-shell grid gap-8 md:grid-cols-[1.5fr_1fr]">
+      <div>
+        <p class="font-serif text-lg text-ink">Smart Home Estimate</p>
+        <p class="mt-3 max-w-2xl text-sm text-ink/70">Free planning calculators for residential repair budgets. Estimates are educational planning ranges and are not binding contractor bids, engineering reports, or legal advice.</p>
+      </div>
+      <nav aria-label="Footer navigation" class="grid grid-cols-2 gap-3">
+        <a class="footer-link" href="/about/">About</a>
+        <a class="footer-link" href="/contact/">Contact</a>
+        <a class="footer-link" href="/privacy-policy/">Privacy Policy</a>
+        <a class="footer-link" href="/terms-of-service/">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        if(menu.classList.contains('hidden')) {
+          btn.innerHTML = '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
+        } else {
+          btn.innerHTML = '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>';
+        }
+      });
+    }
+  </script>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-ink font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-ink font-serif;
+  }
+
+  h1 {
+    @apply text-3xl font-normal leading-tight md:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl font-normal md:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl font-normal;
+  }
+
+  p {
+    @apply leading-relaxed text-ink/80;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  table {
+    @apply w-full border-collapse text-left text-sm;
+  }
+
+  th {
+    @apply border-b border-dashed border-dashed bg-transparent font-serif text-ink py-4 px-2;
+  }
+
+  td {
+    @apply border-b border-dashed border-dashed/50 p-3 align-top;
+  }
+}
+
+@layer components {
+  .site-shell {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .hero-band {
+    @apply bg-ivory text-ink;
+  }
+
+  .hero-band p,
+  .hero-band h1,
+  .hero-band a {
+    @apply text-ink;
+  }
+
+  .nav-link {
+    @apply text-sm font-semibold text-ink/80 hover:text-brand;
+  }
+
+  .footer-link {
+    @apply text-sm text-ink/70 hover:text-brand;
+  }
+
+  .semantic-snippet {
+    @apply mt-6 rounded-2xl border border-dashed border-dashed p-5 text-sm leading-relaxed text-ink/80;
+  }
+
+  .content-card {
+    @apply rounded-2xl border border-dashed border-dashed bg-transparent p-6;
+  }
+
+  .directory-card {
+    @apply rounded-2xl border border-dashed border-dashed bg-transparent p-6 transition-all duration-200 hover:-translate-y-1 hover:border-ink/30 hover:bg-white/40;
+  }
+
+  .calculator-panel {
+    @apply rounded-2xl border border-dashed border-dashed bg-transparent p-5 md:p-7;
+  }
+
+  .lead-panel {
+    @apply rounded-2xl border border-dashed border-brand bg-brand/5 p-6 text-ink;
+  }
+
+  .lead-panel p {
+    @apply text-ink/80;
+  }
+
+  .step-label {
+    @apply mb-3 block text-sm font-bold uppercase tracking-wide text-ink/50;
+  }
+
+  .choice-grid {
+    @apply grid gap-3 md:grid-cols-2;
+  }
+
+  .choice-card {
+    @apply flex cursor-pointer gap-3 rounded-xl border border-dashed border-dashed bg-transparent p-4 transition hover:border-ink/40 hover:bg-white/50;
+  }
+
+  .choice-card input {
+    @apply mt-1 h-4 w-4 accent-brand;
+  }
+
+  .choice-card strong {
+    @apply block text-sm font-bold text-ink;
+  }
+
+  .choice-card span {
+    @apply mt-1 block text-sm leading-relaxed text-ink/70;
+  }
+
+  .form-control {
+    @apply w-full rounded-xl border border-dashed border-dashed bg-transparent px-4 py-3 text-base text-ink outline-none transition focus:border-brand focus:ring-1 focus:ring-brand;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-11 items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-light focus:outline-none focus:ring-2 focus:ring-brand/50 focus:ring-offset-2 focus:ring-offset-ivory;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-11 items-center justify-center rounded-full border border-dashed border-dashed bg-transparent px-6 py-3 text-sm font-bold text-ink transition hover:border-ink/50 hover:bg-white/50 focus:outline-none focus:ring-2 focus:ring-ink/20;
+  }
+
+  .calc-step {
+    @apply hidden;
+  }
+
+  .calc-step.is-active {
+    @apply block;
+  }
+
+  .result-box {
+    @apply rounded-2xl border border-dashed border-dashed bg-white/40 p-5;
+  }
+
+  .estimate-value {
+    @apply mt-2 block font-serif text-3xl font-normal tracking-tight text-ink md:text-4xl;
+  }
+
+  .article-body {
+    @apply space-y-8;
+  }
+
+  .article-body ul,
+  .article-body ol {
+    @apply ml-6 space-y-2 text-ink/80;
+  }
+
+  .article-body ul {
+    @apply list-disc;
+  }
+
+  .article-body ol {
+    @apply list-decimal;
+  }
+
+  .faq-list {
+    @apply divide-y divide-dashed divide-dashed border-b border-t border-dashed border-dashed bg-transparent;
+  }
+
+  .faq-list dt {
+    @apply py-5 text-lg font-serif font-normal text-ink flex items-center justify-between;
+  }
+
+  .faq-list dd {
+    @apply pb-5 text-sm leading-relaxed text-ink/80;
+  }
+
+  .honeypot {
+    @apply absolute -left-[9999px] h-px w-px overflow-hidden opacity-0;
+  }
+}
+

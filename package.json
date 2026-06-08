@@ -1,0 +1,23 @@
+{
+  "name": "project-08",
+  "version": "1.0.0",
+  "description": "Static SEO-first home repair estimator website with modular calculator logic.",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "build:html": "node ./scripts/generate-static-site.mjs",
+    "build": "npm run build:html && npm run build:css",
+    "serve": "npx http-server . -p 4173 -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.49",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17"
+  }
+}
