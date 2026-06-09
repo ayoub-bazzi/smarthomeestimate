@@ -774,7 +774,7 @@ function homepage() {
           <img src="/assets/images/aerial-property-roof-optimization-estimate.jpg" width="2206" height="1445" loading="eager" fetchpriority="high" decoding="async" title="Smart Home Estimate – Automated Property Structural Valuation Hub" alt="Aerial drone rendering of residential property structures displaying dynamic automated cost estimates and local roof profile planning metrics." class="aspect-[2206/1445] w-full rounded-[1.25rem] object-cover">
         </figure>
         <div class="absolute -bottom-8 left-4 right-4 md:right-auto md:-bottom-6 md:left-6 md:max-w-xs rounded-2xl bg-white p-4 md:p-5 shadow-[0_22px_60px_rgba(51,35,27,0.20)]">
-          <p class="text-[0.65rem] md:text-xs font-bold uppercase tracking-[0.18em] text-[#8b5036]">instant clarity</p>
+          <p class="text-[0.65rem] md:text-xs font-bold uppercase tracking-[0.18em] text-[#8b5036]">preliminary estimate</p>
           <p class="mt-1 md:mt-2 text-lg md:text-xl font-bold tracking-tight text-slate-950">$24k - $54k roof scenarios</p>
           <p class="mt-1 md:mt-2 text-xs md:text-sm text-slate-600">Planning data before contractor calls.</p>
         </div>
@@ -840,7 +840,7 @@ function aboutPage() {
 }
 
 function contactPage() {
-  const body = `${simpleHero('Contact Our Project Estimation & Editorial Team', 'Submit technical feedback, calculator corrections, or general site inquiries.', 'Use this channel for website and editorial questions. For exact repair pricing, request an inspection from a licensed local contractor.')}
+  const body = `${simpleHero('Contact Our Project Estimation & Editorial Team', 'Submit technical feedback, calculator corrections, or general site inquiries.', 'Use this channel for website and editorial questions. For precise repair pricing, request an inspection from a licensed local contractor.')}
   <main class="site-shell py-12">
     <section class="mx-auto max-w-xl content-card">
       <h2>Submit Your Message Online</h2>
@@ -868,7 +868,7 @@ function contactPage() {
 }
 
 function privacyPage() {
-  const body = `${simpleHero('Privacy Policy', 'Effective Date: May 31, 2026', 'Calculator inputs are processed locally in the browser unless a user voluntarily submits a form to a third-party or serverless endpoint.')}
+  const body = `${simpleHero('Privacy Policy', 'Effective Date: June 9, 2026', 'Calculator inputs are processed locally in the browser unless a user voluntarily submits a form to a third-party or serverless endpoint.')}
   <main class="site-shell article-body py-12">
     ${section('1. Information We Collect and Process', [
       'Calculator variables such as square footage, material choices, and symptom selections are processed client-side to produce estimates. ZIP codes may be used to apply broad regional labor multipliers.',
@@ -892,7 +892,7 @@ function privacyPage() {
 }
 
 function termsPage() {
-  const body = `${simpleHero('Terms of Service', 'Effective Date: June 1, 2026', 'The calculators provide educational planning estimates only. They are not binding quotes, engineering reports, legal advice, or contractor-client agreements.')}
+  const body = `${simpleHero('Terms of Service', 'Effective Date: June 9, 2026', 'The calculators provide educational planning estimates only. They are not binding quotes, engineering reports, legal advice, or contractor-client agreements.')}
   <main class="site-shell article-body py-12">
     ${section('1. Informational Estimator Disclaimer', [
       'All calculators and pricing matrices are preliminary educational tools. Real project costs can vary due to hidden damage, access, code requirements, permits, environmental conditions, and contractor scope.'
