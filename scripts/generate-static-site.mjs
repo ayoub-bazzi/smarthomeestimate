@@ -295,6 +295,9 @@ function layout({ title, metaTitle, metaDescription, url, keyword, body, schema 
   <link rel="icon" type="image/svg+xml" href="/assets/images/icon.svg">
   <link rel="icon" type="image/png" href="/assets/images/icon.png">
   <link rel="apple-touch-icon" href="/assets/images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   ${extraHead}
   <link rel="preload" href="/assets/css/styles.css" as="style">
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -771,7 +774,7 @@ function homepage() {
       <div class="relative">
         <div class="absolute -left-5 top-10 hidden h-52 w-52 rounded-full border border-[#8b5036]/20 lg:block"></div>
         <figure class="relative overflow-hidden rounded-[1.75rem] bg-white p-3 shadow-[0_30px_90px_rgba(51,35,27,0.24)]">
-          <img src="/assets/images/aerial-property-roof-optimization-estimate.webp" width="2206" height="1445" loading="eager" fetchpriority="high" decoding="async" title="Smart Home Estimate – Automated Property Structural Valuation Hub" alt="Aerial drone rendering of residential property structures displaying dynamic automated cost estimates and local roof profile planning metrics." class="aspect-[2206/1445] w-full rounded-[1.25rem] object-cover">
+          <img srcset="/assets/images/aerial-property-roof-optimization-estimate-mobile.webp 600w, /assets/images/aerial-property-roof-optimization-estimate.webp 2206w" sizes="(max-width: 768px) 100vw, 1000px" src="/assets/images/aerial-property-roof-optimization-estimate.webp" width="2206" height="1445" loading="eager" fetchpriority="high" decoding="async" title="Smart Home Estimate – Automated Property Structural Valuation Hub" alt="Aerial drone rendering of residential property structures displaying dynamic automated cost estimates and local roof profile planning metrics." class="aspect-[2206/1445] w-full rounded-[1.25rem] object-cover">
         </figure>
         <div class="absolute -bottom-8 left-4 right-4 md:right-auto md:-bottom-6 md:left-6 md:max-w-xs rounded-2xl bg-white p-4 md:p-5 shadow-[0_22px_60px_rgba(51,35,27,0.20)]">
           <p class="text-[0.65rem] md:text-xs font-bold uppercase tracking-[0.18em] text-[#8b5036]">preliminary estimate</p>
