@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -8,6 +8,8 @@ const site = {
   domain: 'https://smarthomeestimate.com',
   description: 'Interactive home repair calculators for high-ticket residential projects.'
 };
+
+const cssContent = await readFile(join(root, 'assets/css/styles.css'), 'utf8');
 
 const nav = [
   ['/', 'Home'],
@@ -297,10 +299,11 @@ function layout({ title, metaTitle, metaDescription, url, keyword, body, schema 
   <link rel="apple-touch-icon" href="/assets/images/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/images/aerial-property-roof-optimization-estimate-mobile.webp" as="image" media="(max-width: 768px)">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"></noscript>
   ${extraHead}
-  <link rel="preload" href="/assets/css/styles.css" as="style">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>${cssContent}</style>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body>
