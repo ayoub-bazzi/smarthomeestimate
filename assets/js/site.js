@@ -301,13 +301,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (!consent) {
       setTimeout(() => {
-        cookieBanner.classList.remove('translate-y-full');
+        cookieBanner.classList.remove('translate-y-[200%]');
       }, 500);
     }
 
     acceptCookiesBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'accepted');
-      cookieBanner.classList.add('translate-y-full');
+      cookieBanner.classList.add('translate-y-[200%]');
       if (typeof window.initGA4 === 'function') {
         window.initGA4();
       }
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     declineCookiesBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'declined');
-      cookieBanner.classList.add('translate-y-full');
+      cookieBanner.classList.add('translate-y-[200%]');
     });
   }
 });
