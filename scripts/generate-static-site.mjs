@@ -305,6 +305,25 @@ function layout({ title, metaTitle, metaDescription, url, keyword, body, schema 
   ${extraHead}
   <style>${cssContent}</style>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+  <script>
+    window.initGA4 = function() {
+      if (window.ga4Initialized) return;
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-6R7T710WX7';
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6R7T710WX7');
+      window.ga4Initialized = true;
+    };
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      window.initGA4();
+    }
+  </script>
 </head>
 <body>
   <header class="border-b border-dashed border-dashed relative z-50">
