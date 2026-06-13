@@ -378,6 +378,18 @@ function layout({ title, metaTitle, metaDescription, url, keyword, body, schema 
       });
     }
   </script>
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] translate-y-full bg-white p-5 shadow-[0_-10px_40px_rgba(51,35,27,0.1)] transition-transform duration-500 sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-sm sm:rounded-2xl sm:border sm:border-dashed sm:border-ink/20">
+    <div class="flex flex-col gap-4">
+      <div>
+        <h3 class="font-serif text-lg text-ink">Cookie Consent</h3>
+        <p class="text-sm text-ink/80 mt-1 leading-relaxed">We use cookies to improve your experience and analyze site traffic. Read our <a href="/privacy-policy/" class="underline hover:text-brand">Privacy Policy</a>.</p>
+      </div>
+      <div class="flex gap-3">
+        <button id="accept-cookies" class="btn-primary flex-1 !min-h-10 py-2 text-xs">Accept All</button>
+        <button id="decline-cookies" class="btn-secondary flex-1 !min-h-10 py-2 text-xs">Decline</button>
+      </div>
+    </div>
+  </div>
   <script src="/assets/js/site.js" defer></script>
 </body>
 </html>`;

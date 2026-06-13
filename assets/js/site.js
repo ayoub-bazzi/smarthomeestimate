@@ -291,4 +291,31 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-calculator]').forEach(initCalculator);
   initEstimateForms();
   initContactForms();
+
+  const cookieBanner = document.getElementById('cookie-banner');
+  const acceptCookiesBtn = document.getElementById('accept-cookies');
+  const declineCookiesBtn = document.getElementById('decline-cookies');
+
+  if (cookieBanner && acceptCookiesBtn && declineCookiesBtn) {
+    const consent = localStorage.getItem('cookieConsent');
+    
+    if (!consent) {
+      setTimeout(() => {
+        cookieBanner.classList.remove('translate-y-full');
+      }, 500);
+    }
+
+    acceptCookiesBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'accepted');
+      cookieBanner.classList.add('translate-y-full');
+      if (typeof window.initGA4 === 'function') {
+        window.initGA4();
+      }
+    });
+
+    declineCookiesBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'declined');
+      cookieBanner.classList.add('translate-y-full');
+    });
+  }
 });
